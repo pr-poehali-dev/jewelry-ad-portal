@@ -17,7 +17,14 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Icon name="Gem" size={32} className="text-yellow-600" />
-              <h1 className="text-2xl font-bold text-gray-900">ЮвелиРКа.рф</h1>
+              <div>
+                <h1 className="text-2xl font-bold text-gray-900">
+                  ЮвелиРКа.рф
+                </h1>
+                <p className="text-sm text-gray-600">
+                  Сеть ювелирных мастерских в Минусинске и Абакане
+                </p>
+              </div>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a
@@ -127,9 +134,9 @@ const Index = () => {
               О компании
             </h3>
             <p className="text-lg text-gray-600 mb-12">
-              Мы — семейная мастерская с 40-летней историей создания уникальных
-              украшений. Каждое изделие проходит строгий контроль качества и
-              сопровождается сертификатами подлинности.
+              На рынке более 25 лет. Большой опыт в изготовлении ювелирных
+              изделий и ремонты любой сложности. Каждое изделие проходит строгий
+              контроль качества.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -138,22 +145,22 @@ const Index = () => {
                   <Icon name="Award" size={32} className="text-white" />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">
-                  40+ лет опыта
+                  25+ лет опыта
                 </h4>
                 <p className="text-gray-600">
-                  Многолетние традиции ювелирного мастерства
+                  Изготовление ювелирных изделий и ремонты любой сложности
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Icon name="Shield" size={32} className="text-white" />
+                  <Icon name="Wrench" size={32} className="text-white" />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">
-                  Пожизненная гарантия
+                  Ремонт любой сложности
                 </h4>
                 <p className="text-gray-600">
-                  Полная ответственность за качество изделий
+                  Восстановление и реставрация ювелирных изделий
                 </p>
               </div>
 
@@ -162,10 +169,10 @@ const Index = () => {
                   <Icon name="Star" size={32} className="text-white" />
                 </div>
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">
-                  Эксклюзивность
+                  Высокое качество
                 </h4>
                 <p className="text-gray-600">
-                  Каждое украшение создается в единственном экземпляре
+                  Каждое украшение создается с особым вниманием к деталям
                 </p>
               </div>
             </div>
@@ -193,24 +200,9 @@ const Index = () => {
                 icon: "Sparkles",
               },
               {
-                title: "Ожерелья",
-                description: "Роскошные колье и цепочки",
-                icon: "Heart",
-              },
-              {
                 title: "Браслеты",
                 description: "Элегантные браслеты всех стилей",
                 icon: "Link",
-              },
-              {
-                title: "Броши",
-                description: "Винтажные и современные броши",
-                icon: "Crown",
-              },
-              {
-                title: "Запонки",
-                description: "Мужская классика премиум качества",
-                icon: "Square",
               },
             ].map((item, index) => (
               <Card
@@ -383,16 +375,7 @@ const Index = () => {
                     size={20}
                     className="text-yellow-600 mr-3"
                   />
-                  <span className="text-gray-700">+7 (495) 123-45-67</span>
-                </div>
-
-                <div className="flex items-center">
-                  <Icon
-                    name="Mail"
-                    size={20}
-                    className="text-yellow-600 mr-3"
-                  />
-                  <span className="text-gray-700">info@elite-jewelry.ru</span>
+                  <span className="text-gray-700">+7 (913) 519-34-32</span>
                 </div>
 
                 <div className="flex items-center">
@@ -402,7 +385,7 @@ const Index = () => {
                     className="text-yellow-600 mr-3"
                   />
                   <span className="text-gray-700">
-                    Москва, ул. Тверская, 15, этаж 3
+                    Абакан, ул. Тараса Шевченко, 59, магазин "Изумруд"
                   </span>
                 </div>
 
@@ -444,13 +427,13 @@ const Index = () => {
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-6">
               <Icon name="Gem" size={32} className="text-yellow-500" />
-              <h1 className="text-2xl font-bold">ЭЛИТНЫЕ УКРАШЕНИЯ</h1>
+              <h1 className="text-2xl font-bold">ЮвелиРКа.рф</h1>
             </div>
             <p className="text-gray-400 mb-4">
-              Эксклюзивные украшения премиум класса с 1985 года
+              ЮвелиРКа.рф — сеть ювелирных мастерских в Минусинске и Абакане
             </p>
             <p className="text-gray-500 text-sm">
-              © 2024 Элитные украшения. Все права защищены.
+              © 2024 ЮвелиРКа.рф. Все права защищены.
             </p>
           </div>
         </div>
