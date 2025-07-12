@@ -71,32 +71,52 @@ const Index = () => {
         id="home"
         className="py-20 bg-gradient-to-br from-gray-50 to-white"
       >
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">
-            Эксклюзивные украшения
-            <br />
-            <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-              премиум класса
-            </span>
-          </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Создаём украшения высочайшего качества с 1985 года. Индивидуальный
-            подход, безупречное мастерство, пожизненные гарантии.
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white"
-            >
-              Посмотреть каталог
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-gray-300 text-gray-700 hover:bg-gray-50"
-            >
-              Индивидуальный заказ
-            </Button>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <h2 className="text-5xl font-bold text-gray-900 mb-6">
+                Эксклюзивные украшения
+                <br />
+                <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+                  премиум класса
+                </span>
+              </h2>
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl lg:max-w-none">
+                Создаём украшения высочайшего качества с 1985 года.
+                Индивидуальный подход, безупречное мастерство, пожизненные
+                гарантии.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white"
+                >
+                  Посмотреть каталог
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-gray-300 text-gray-700 hover:bg-gray-50"
+                >
+                  Индивидуальный заказ
+                </Button>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-yellow-50 to-white p-8">
+                <img
+                  src="https://cdn.poehali.dev/files/4ec7dfe7-172f-4c67-86fe-abe3146e4edb.jpg"
+                  alt="Роскошное золотое украшение с драгоценными камнями"
+                  className="w-full h-auto object-contain max-h-96 mx-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent rounded-2xl"></div>
+              </div>
+
+              {/* Декоративные элементы */}
+              <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full animate-pulse"></div>
+              <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-yellow-500 rounded-full animate-pulse delay-1000"></div>
+            </div>
           </div>
         </div>
       </section>
