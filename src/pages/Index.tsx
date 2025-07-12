@@ -17,9 +17,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <Icon name="Gem" size={32} className="text-yellow-600" />
-              <h1 className="text-2xl font-bold text-gray-900">
-                ЭЛИТНЫЕ УКРАШЕНИЯ
-              </h1>
+              <h1 className="text-2xl font-bold text-gray-900">ЮвелиРКа.рф</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a
